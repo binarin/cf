@@ -1,3 +1,6 @@
+all:
+	rebar3 compile
+
 TERMCAP_FILE=http://code.metager.de/source/raw/OpenBSD/src/share/termtypes/termtypes.master
 
 src/termcap.erl: termtypes.master.clean mk-termcap.escript termcap.erl
